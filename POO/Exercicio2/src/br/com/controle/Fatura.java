@@ -14,6 +14,7 @@ public class Fatura {
     private int quantidade;
     private double preco;
     private double totalFatura;
+    double resultado;
 
     public String getNumero() {
         return numero;
@@ -48,9 +49,7 @@ public class Fatura {
     }
 
     public double getTotalFatura() {
-        return this.preco * this.quantidade;
+        return this.quantidade * this.preco;
     }
-
- 
     
 }

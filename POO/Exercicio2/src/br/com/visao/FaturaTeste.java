@@ -15,8 +15,9 @@ public class FaturaTeste {
     Fatura f = new Fatura();
     f.setNumero((JOptionPane.showInputDialog("Numero")));
     f.setDescricao((JOptionPane.showInputDialog("Descrição"))); 
-    f.setQuantidade(Integer.valueOf(JOptionPane.showInputDialog("Quantidade")));
     f.setPreco(Double.valueOf(JOptionPane.showInputDialog("Preço")));
+    f.setQuantidade(Integer.valueOf(JOptionPane.showInputDialog("Quantidade")));
+    
    // JOptionPane.showMessageDialog(null, "Fatura:" + getTotalFatura());
             
     }

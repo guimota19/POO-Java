@@ -4,10 +4,6 @@
  */
 package br.com.controle;
 
-/**
- *
- * @author guimo
- */
 public class CadastroCarro {
     private String modelo;
     private int ano;
@@ -36,6 +32,4 @@ public class CadastroCarro {
     public void setMarca(String marca) {
         this.marca = marca;
     }
-    
-    
 }
