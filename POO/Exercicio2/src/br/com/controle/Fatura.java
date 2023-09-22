@@ -41,6 +41,9 @@ public class Fatura {
     }
 
     public double getPreco() {
+        if(preco <= 0){
+            preco = 0.00;
+        }
         return preco;
     }
 
@@ -49,7 +52,11 @@ public class Fatura {
     }
 
     public double getTotalFatura() {
-        return this.quantidade * this.preco;
+        resultado = this.quantidade * this.preco;
+        if(resultado <= 0){
+            resultado = 0.00;
+        }
+        return resultado;
     }
     
 }
